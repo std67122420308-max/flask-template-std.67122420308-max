@@ -11,26 +11,25 @@ def index():
 def about():
   title = 'About Page'
   name = 'Wichai Boonkerng'
-  emali = 'std.671224203082ubru.ac.th'
-  mobile = '066-555-4545'
-  ags = 20
+  email = 'std.67122420308@ubru.ac.th'
+  mobile = '063-2354-5545'
+  age = 20
   return render_template('about.html', title=title,
-                          name=name,
-                          email=email,
-                          mobile=mobile,
-                          age=ags)
+                                      name=name,
+                                      email=email,
+                                      mobile=mobile,
+                                      age=age)
 
 @app.route('/favorite/foods')
 def favorite_foods():
-  title = 'Favorite Foods Page'
-  foods = ['กระเพราหมูสับ', 'ก๋วยเตี๋ยว', 'ตำป่า']
-  return render_template('favorite_foods.htln', 
-                          title=title,
-                          foods=foods)
+  title = 'Favorits Foods Page'
+  foods = ['ก๋วยเตี๋ยว','ก๋วยจั๊บ','กะเพรา']
+  return render_template('favorite_foods.html',
+                          title = title,
+                            foods = foods)
+
 @app.route('/favorite/sports')
-def favorite_foods():
-  title = 'Favorite Sport Page'
+def favorite_sports():
+  title = 'Favorite Sports Page'
   sports = ['ฟุตบอล', 'ฟุตซอล', 'ตะกร้อ']
-  return render_template('favorite_sports.htln', 
-                          title=title,
-                          sports=sports)
+  return render_template('favorite_sports.html', title=title, sports=sports)
