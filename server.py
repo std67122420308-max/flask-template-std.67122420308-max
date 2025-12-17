@@ -37,5 +37,5 @@ def favorite_sports():
 @app.route('/favorite/movies')
 def favorite_movies():
   title = 'Favorite Movies Page'
-  movies = ['มหาเวทย์ผนึกมาร', 'ข้างบ้าน', 'หมู่บ้านโคกะโหลก']
+  movies = ['มหาเวทย์ผนึกมาร', 'ข้างบ้าน', 'หมู่บ้านโคกะโหลก','จอมขมังเวทย์','นาคี 2']
   return render_template('favorite_movies.html', title=title, movies=movies)
